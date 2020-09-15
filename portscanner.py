@@ -21,6 +21,20 @@ class PortScanner:
             if port_status == 0:
                 self.__returned_values.append(port_number)
         s.close()
+        return self.__returned_values
+
+    def scan_port(self,port_number):
+        temp_buffer = []
+        try:
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.settimeout(0.5)
+            port_status = s.connect_ex((self.host,port_number))
+        except ConnectionRefusedError:
+            print("No connection could be made because the target machine actively refused it.")
+        else:
+            if port_status == 0:
+                self.__returned_values.append(port_number)
+        s.close()
         temp_buffer = self.__returned_values
         self.__returned_values = []
         return temp_buffer
