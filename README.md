@@ -3,7 +3,7 @@ A minimal library that scans ports and finds open ports
 ## Usage
 There are two different usage in code and in console.
 ### Usage in code
-<i><b>scan_port()</b></i> method is used to scan only one port. If the port to be scanned is closed, it returns an empty array. If the port to be scanned is open, it returns an array with a port number in it.
+<i><b>scan_port()</b></i> method is used to scan only one port. If the port to be scanned is closed, it returns an empty array. Otherwise, it returns an array with a port number in it.
 ```python
 from portscanner import *
 
@@ -16,8 +16,7 @@ result = p.scan_port(81)
 print(result) #output: []
 ```
 
-<i><b>scan_range()</b></i> method is used to scan that a certain range.<br> 
-Returns open ports in an array if a specified range of ports are open.
+<i><b>scan_range()</b></i> method is used to scan that a certain range. Returns open ports in an array if a specified range of ports are open.
 ```python
 from portscanner import *
 
@@ -27,8 +26,7 @@ result = p.scan_range(1,1000)
 print(result) #output: [25, 21, 80, 53, 110, 143, 443, 465]
 ```
 
-<i><b>scan_all()</b></i> method is used to scan that all open ports.<br> 
-Returns open ports in an array if a specified range of ports are open. This method may take about 10 seconds to finish.
+<i><b>scan_all()</b></i> method is used to scan that all open ports. Returns open ports in an array if a specified range of ports are open. This method may take about 10 seconds to finish.
 ```python
 from portscanner import *
 
