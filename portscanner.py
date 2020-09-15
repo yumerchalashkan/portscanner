@@ -21,7 +21,9 @@ class PortScanner:
             if port_status == 0:
                 self.__returned_values.append(port_number)
         s.close()
-        return self.__returned_values
+        temp_buffer = self.__returned_values
+        self.__returned_values = []
+        return temp_buffer
     
     def scan_range(self,first,last):
         temp_buffer = []
