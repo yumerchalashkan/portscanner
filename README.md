@@ -39,7 +39,7 @@ p = PortScanner("109.232.216.33")
 result = p.scan_all() #output: [21, 25, 53, 80, 110, 143, 465, 443, 587, 993, 995, 2078, 2095, 2077, 2083, 2087, 2086, 2096, 2082, 33410]
 print(result)
 ```
-### Usage in code
+### Usage in console
 For linux
 ```c
 ./nscan.py 80                //to scan only one port.
