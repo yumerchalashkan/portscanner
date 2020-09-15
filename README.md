@@ -24,6 +24,7 @@ Returns open ports in an array if a specified range of ports are open.
 from portscanner import *
 
 p = PortScanner("109.232.216.33")
+
 result = p.scan_range(1,1000)
 print(result) #output: [25, 21, 80, 53, 110, 143, 443, 465]
 ```
@@ -34,6 +35,7 @@ Returns open ports in an array if a specified range of ports are open. This meth
 from portscanner import *
 
 p = PortScanner("109.232.216.33")
+
 result = p.scan_all() #output: [21, 25, 53, 80, 110, 143, 465, 443, 587, 993, 995, 2078, 2095, 2077, 2083, 2087, 2086, 2096, 2082, 33410]
 print(result)
 ```
