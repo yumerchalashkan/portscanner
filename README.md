@@ -29,7 +29,7 @@ print(result) #output: [25, 21, 80, 53, 110, 143, 443, 465]
 ```
 
 <i><b>scan_all()</b></i> method is used to scan that all open ports.<br> 
-Returns open ports in an array if a specified range of ports are open.
+Returns open ports in an array if a specified range of ports are open. This method may take about 10 seconds to finish.
 ```python
 from portscanner import *
 
