@@ -2,7 +2,6 @@ from portscanner import *
 import sys
 
 
-
 def main():
     try:
         ip = input("Enter an ip address\n")
