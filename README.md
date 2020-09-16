@@ -1,7 +1,7 @@
 # Portscanner
 A minimal library that scans ports and finds open ports
 ## Usage
-There are two different usage in code and in console.
+There are two different usage, code and console.
 ### Usage in code
 <i><b>scan_port()</b></i> method is used to scan only one port. If the port to be scanned is closed, it returns an empty array. Otherwise, it returns an array with a port number in it.
 ```python
