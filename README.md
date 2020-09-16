@@ -9,10 +9,10 @@ from portscanner import *
 
 p = PortScanner("109.232.216.33")
 
-result = p.scan_port(80)
+result = p.scan_port(80) #for open port
 print(result) #output: [80]
 
-result = p.scan_port(81)
+result = p.scan_port(81) #for closed port
 print(result) #output: []
 ```
 
