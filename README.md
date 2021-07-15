@@ -40,7 +40,7 @@ For linux
 ```c
 ./nscan.py 80                //to scan only one port.
 ./nscan.py -range 1 1000     //to scan the range 1 and 1000
-./python nscan.py -all       //to scan all open ports
+./nscan.py -all       //to scan all open ports
 ```
 For windows
 ```c
